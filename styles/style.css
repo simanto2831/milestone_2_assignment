@@ -31,6 +31,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 4rem 0;
 }
 .header_left {
@@ -38,7 +39,7 @@ header {
   gap: 1.2rem;
 }
 .header_left img {
-  width: 48px;
+  width: 3rem;
 }
 .header_left h1 {
   font-size: 2.25rem;
@@ -47,6 +48,9 @@ header {
 }
 .header_left span {
   color: var(--orange-color);
+}
+.header_right i {
+  display: none;
 }
 header ul {
   display: flex;
@@ -63,4 +67,35 @@ header ul li a {
 }
 header ul .active {
   color: var(--orange-color) !important;
+}
+
+/* styles for responsive */
+/* small devices */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0 1.5rem;
+  }
+  /* header section */
+  .header_right ul {
+    display: none;
+  }
+  .header_right i {
+    display: block;
+    font-size: 2rem;
+  }
+}
+
+/* medium devices */
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  body {
+    padding: 0 1.5rem;
+  }
+  /* header section */
+  .header_right ul {
+    display: none;
+  }
+  .header_right i {
+    display: block;
+    font-size: 2rem;
+  }
 }
