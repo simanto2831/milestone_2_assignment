@@ -471,6 +471,74 @@ button {
   text-align: center;
 }
 
+/* newsletter section */
+.newsletter {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.newsletter_left {
+  max-width: 600px;
+  padding: 2rem;
+  border: 1px solid var(--orange-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.newsletter_title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--dark-black);
+}
+.newsletter_text {
+  color: var(--light-black);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 1.9rem 0;
+  max-width: 400px;
+}
+.newsletter_left hr {
+  background: rgba(19, 19, 24, 0.1);
+  margin-bottom: 1.8rem;
+}
+.newsletter_left input {
+  border: none;
+  border-radius: 10px;
+  padding: 2rem 1.4rem;
+  background: rgba(19, 19, 24, 0.05);
+  margin-bottom: 1.2rem;
+}
+.newsletter_left button {
+  width: 100%;
+  padding: 1.7rem 0rem;
+}
+.newsletter_right {
+  max-width: 840px;
+  width: 100%;
+  position: relative;
+}
+.newsletter_tag {
+  background: var(--orange-color);
+  border-radius: 10px;
+  max-width: 20rem;
+  padding: 1.6rem 2.3rem;
+  position: absolute;
+  transform: rotate(-32deg);
+  left: 50%;
+  top: 50%;
+}
+.tag_text {
+  color: var(--white-color);
+  text-align: center;
+  font-size: 1.5rem;
+}
+.tag_title {
+  color: var(--white-color);
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+}
+
 /* styles for responsive */
 /* small devices */
 @media screen and (max-width: 600px) {
@@ -596,6 +664,38 @@ button {
   .place_left p {
     margin-bottom: 1rem;
   }
+
+  /* newsletter section */
+  .newsletter {
+    margin-top: 3rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .newsletter_text {
+    margin: 1rem 0;
+  }
+  .newsletter_left input {
+    padding: 1.2rem 1.4rem;
+  }
+  .newsletter_left button {
+    width: 100%;
+    padding: 1rem 0rem;
+  }
+  .newsletter_tag {
+    max-width: 20rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+  .tag_text {
+    font-size: 0.8rem;
+  }
+  .tag_title {
+    font-size: 1rem;
+    font-weight: 600;
+  }
 }
 
 /* medium devices */
@@ -665,10 +765,30 @@ button {
   .place_title {
     font-size: 2.5rem;
   }
+  .place_left {
+    max-width: 100%;
+  }
   .place_left ul {
     margin: 1rem 0;
   }
   .place_left p {
     margin-bottom: 1rem;
+  }
+  /* newsletter section */
+  .newsletter {
+    margin-top: 3rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .newsletter_left {
+    max-width: 100%;
+  }
+  .newsletter_right {
+    max-width: 100%;
+  }
+  .newsletter_tag {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
   }
 }
