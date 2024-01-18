@@ -294,6 +294,103 @@ button {
   margin-top: 1.8rem;
 }
 
+/* deals section */
+.deals {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.deals_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  gap: 1.8rem;
+  margin-bottom: 2rem;
+}
+.deals_title {
+  font-size: 3rem;
+  color: var(--dark-black);
+  font-weight: 800;
+  text-align: center;
+}
+.deals_text {
+  font-size: 1rem;
+  color: var(--light-black);
+  line-height: 2rem;
+  text-align: center;
+}
+.deals_card {
+  background-image: url("../images/Images/Group\ 39.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 0 3rem;
+}
+.deals_one,
+.deals_three {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.deals_two {
+  background-image: url("../images/Images/Group\ 40.png");
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.deals_box {
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  max-width: 550px;
+  padding: 2rem;
+}
+.dealBox_top_content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.dealBox_top_content h6 {
+  font-size: 1rem;
+  color: var(--light-black);
+}
+.dealBox_top_content i {
+  color: var(--orange-color);
+}
+.dealBox_title {
+  font-size: 1.5rem;
+  color: var(--dark-black);
+  font-weight: 800;
+  margin: 1.5rem 0;
+}
+.dealBox_text {
+  font-size: 1rem;
+  color: var(--light-black);
+  line-height: 1.6rem;
+}
+.deals_text_mobile_device {
+  display: none;
+}
+.dealBox_price {
+  color: var(--orange-color);
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 1.3rem 0;
+}
+.deal_btn {
+  width: 15rem;
+  padding: 0.8rem 2rem;
+  margin-top: 1rem;
+}
+
 /* styles for responsive */
 /* small devices */
 @media screen and (max-width: 600px) {
@@ -366,6 +463,41 @@ button {
   .choose_us_card_container_one {
     display: flex;
     flex-direction: column;
+  }
+
+  /* deals section */
+  .deals_content {
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .deals_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+  }
+  .deals_box {
+    padding: 1rem;
+  }
+
+  .dealBox_top_content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 14rem;
+    gap: 1rem;
+  }
+  .dealBox_text {
+    display: none;
+  }
+  .deals_text_mobile_device {
+    display: inline-block;
+  }
+  .dealBox_title {
+    margin: 1rem 0;
+  }
+  .dealBox_price {
+    margin: 1rem 0;
   }
 }
 
