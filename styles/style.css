@@ -122,6 +122,44 @@ button {
   width: 11rem;
 }
 
+/* popular section */
+.popular {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.popular_left {
+  flex-basis: 50%;
+  max-width: 720px;
+}
+.popular_title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--dark-black);
+}
+.popular_left ul {
+  margin: 2rem 0;
+  line-height: 2.2rem;
+  color: var(--light-black);
+  font-size: 1rem;
+}
+.popular_left ul li {
+  margin-left: 2rem;
+  font-size: 1rem;
+}
+.popular_left p {
+  color: var(--light-black);
+  font-size: 1rem;
+  margin-bottom: 1.8rem;
+  line-height: 2.2rem;
+}
+.popular_left button {
+  padding: 1rem 1.5rem;
+}
+.popular_right {
+  max-width: 720px;
+}
+
 /* styles for responsive */
 /* small devices */
 @media screen and (max-width: 600px) {
@@ -168,6 +206,12 @@ button {
   .banner_input button {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  /* popular section */
+  .popular {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 
@@ -216,5 +260,11 @@ button {
   .banner_input button {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  /* popular section */
+  .popular {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
