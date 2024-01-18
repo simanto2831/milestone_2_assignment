@@ -267,4 +267,8 @@ button {
     flex-direction: column;
     gap: 2rem;
   }
+  .popular_right,
+  .popular_left {
+    max-width: 100%;
+  }
 }
